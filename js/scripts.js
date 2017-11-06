@@ -29,5 +29,9 @@ $(function(){
     var flashAnswer = $('input#flash-answer').val();
     var flashcard = new Flashcard(flashName, flashSnippet, flashAnswer);
     $('div#actual-list').children('ul').append('<li>' + flashName + '</li>');
+    $('div#actual-list').children('ul').last().click(function(){
+      $('span#show-name').text(flashName);
+      $('#flashcard-modal').modal('show');
+    });
   });
 });
