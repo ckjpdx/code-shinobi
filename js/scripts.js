@@ -19,3 +19,8 @@ var isGuessCorrect = false;
   }
 return isGuessCorrect;
 };
+
+// FRONTEND
+$(function(){
+  
+});
