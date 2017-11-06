@@ -46,29 +46,53 @@
           </ul>
         </div>
       </div><!--library-->
-
+<!--flashcard modal-->
       <div id="flashcard-modal" class="modal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Snippet:<span></span></h5>
+              <h5 class="modal-title"><span id="show-name"></span></h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <form>
-              <div class="form-group">
-                <label for="exampleInputEmail1">Your Answer:</label>
-                <input type="text" class="form-control" id="your-answer" placeholder="Enter answer here">
+            <div class="flashcard-question">
+              <div class="modal-body">
+                <h4><strong>Your Snippet:</strong></h4>
+                <p id="show-snippet"></p>
+                <form>
+                  <div class="form-group">
+                    <label for="answer">Your Answer:</label>
+                    <input type="text" class="form-control" id="user-answer" placeholder="Enter answer here">
+                  </div>
+                </form>
               </div>
-            <div class="modal-footer">
-              <button type="submit" class="btn btn-primary">Check Your Code, Shinobi!</button>
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Check Your Code, Shinobi!</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div> <!--flash card question-->
+            <div id="correct-result"> <!--correct result-->
+              <div class="modal-body">
+                <p>Great job, Shinobi.</p>
+                <img src="img/cowabunga.jpg" alt="teenage mutant ninja turtle thumbs up">
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div><!--correct result div-->
+            <div class="dad-hates-you"> <!-- dad hates you, remember that -->
+              <p>Umm...</p>
+              <img src="img/wtf.jpg" alt="jean luc is upset">
             </div>
           </div>
         </div>
+<<<<<<< HEAD
       </div>
 >>>>>>> b97958e464b67856d77b7711dca5a2c57870208c
+=======
+      </div><!--modal div-->
+>>>>>>> e7a05a84c86ba61bda451273e3da63a80c71d181
 
     </div><!--main contaier-->
   </body>
