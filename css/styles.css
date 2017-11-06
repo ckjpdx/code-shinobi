@@ -2,10 +2,25 @@
   display: none;
 }
 
+body {
+  background-color: rgba(94, 87, 104, 0.75);
+}
+.jumbotron {
+  background-color: rgba(145, 11, 11, 0.75);
+  color: rgba(255, 248, 240, 1);
+}
+
+button {
+  background-color: rgba(25, 29, 50, 1);
+  border: 0;
+  color: rgba(255, 248, 240, 1);
+  display: block;
+  width: 400px;
+}
 /*ninjacat palette*/
 /* RGB */
-$color1: rgba(25, 29, 50, 1);
-$color2: rgba(145, 11, 11, 1);
-$color3: rgba(255, 248, 240, 1);
-$color4: rgba(34, 30, 34, 1);
-$color5: rgba(94, 87, 104, 1);
+$color1: rgba(25, 29, 50, 1); /*dark gunmetal*/
+$color2: rgba(145, 11, 11, 1); /*sangria*/
+$color3: rgba(255, 248, 240, 1);/*floral white*/
+$color4: rgba(34, 30, 34, 1);/*raisin black*/
+$color5: rgba(94, 87, 104, 1);/*granite gray*/
