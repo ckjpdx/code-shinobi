@@ -22,6 +22,14 @@ return isGuessCorrect;
 
 // FRONTEND
 $(function(){
+  $('form#create-user').submit(function(event) {
+    event.preventDefault();
+    var userName = $('input#username').val();
+    var user = new User(userName);
+    $('#create-flashcard').slideDown();
+  });
+
+
   $('form#create-flashcard').submit(function(event){
     event.preventDefault();
     var flashName = $('input#flash-name').val();
