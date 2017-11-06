@@ -15,16 +15,15 @@
         <h1 class="display-3">Obi Code Shinobi: Become a Code Master</h1>
           <p class="lead">Create your own flashcards to guide you to code enlightenment.</p>
       </div>
-      <form>
+      <form id="create-user">
         <div class="form-group">
           <label for="username">Enter your name, shinobi</label>
-          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <input type="text" class="form-control" id="username" placeholder="Your name here">
+          <div class="make-flashcard">
+            <button class="btn-lg btn-block bg-info" id="make-flashcard" type="button" name="button">Make Your Flashcard!</button>
+          </div>
         </div>
       </form>
-
-      <div class="make-flashcard">
-        <button class="btn-lg btn-block bg-info" id="make-flashcard" type="button" name="button">Make Your Flashcard!</button>
-      </div>
 
       <div class="flash-form hide">
         <form id="create-flashcard">
