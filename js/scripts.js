@@ -25,6 +25,7 @@ return isGuessCorrect;
 $(function(){
   var flashCounter = 1;
   var flashLibrary = {};
+  var remainingCards = [];
   var currentId;
   var randomId;
   var user;
@@ -60,6 +61,7 @@ $(function(){
     $("#correct-result").hide();
     $("#dad-hates-you").hide();
     $(".flashcard-test").show();
+    remainingCards = Object.keys(flashLibrary);
     randomId = Object.keys(flashLibrary)[(Math.floor(Math.random() * Object.keys(flashLibrary).length))];
     console.log(randomId);
     $('span#show-name').text(flashLibrary[randomId].name);
