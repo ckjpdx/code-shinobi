@@ -18,6 +18,7 @@ ul {
 
 #actual-list:hover {
   text-decoration: underline;
+}
 
 #name-score-row {
   display: none;
