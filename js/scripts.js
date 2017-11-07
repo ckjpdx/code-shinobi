@@ -50,9 +50,12 @@ $(function(){
       $('span#show-snippet').text(flashSnippet);
       var userAnswer = $("input#user-answer").val();
       $('#flashcard-modal').modal('show');
-      $('form#user-answer').submit(function(event){
+
+    $('form#user-answer').submit(function(event){
         event.preventDefault();
+        console.log("helloooooooooo");
         $(".flashcard-test").hide();
+
         if  (userAnswer === flashAnswer) {
           $("#correct-result").show();
         } else {
