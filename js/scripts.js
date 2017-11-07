@@ -27,7 +27,7 @@ $(function(){
     console.log('yes');
     var userName = $('input#username').val();
     var user = new User(userName);
-    $('#create-flashcard').slideDown();
+    $('form.flash-form').slideDown();
   });
 
 
