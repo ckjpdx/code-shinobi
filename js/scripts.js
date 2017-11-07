@@ -31,7 +31,7 @@ $(function(){
     $('form#create-user').slideUp();
     $('#name-score-row').slideDown();
     console.log("help me");
-    $('#display-user-name').text(userName + ' wan shinobi');
+    $('#display-user-name').text(userName + ' wan Shinobi');
   } else {
     alert('enter name asshat')
   }
@@ -41,13 +41,25 @@ $(function(){
   $('form#create-flashcard').submit(function(event){
     event.preventDefault();
     var flashName = $('input#flash-name').val();
-    var flashSnippet = $('input#flash-snippet').val();
-    var flashAnswer = $('input#flash-answer').val();
+    var flashSnippet = $('textarea#flash-snippet').val();
+    var flashAnswer = $('textarea#flash-answer').val();
     var flashcard = new Flashcard(flashName, flashSnippet, flashAnswer);
     $('div#actual-list').children('ul').append('<li>' + flashName + '</li>');
     $('div#actual-list').children('ul').last().click(function(){
       $('span#show-name').text(flashName);
+      $('span#show-snippet').text(flashSnippet);
+      var userAnswer = $("input#user-answer").val();
       $('#flashcard-modal').modal('show');
+      $('form#user-answer').submit(function(event){
+        event.preventDefault();
+        $(".flashcard-test").hide();
+        if  (userAnswer === flashAnswer) {
+          $("#correct-result").show();
+        } else {
+          $("#dad-hates-you").show();
+        }
+
+      });
     });
   });
 });
