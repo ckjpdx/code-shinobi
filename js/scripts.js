@@ -24,9 +24,10 @@ return isGuessCorrect;
 $(function(){
   $('form#create-user').submit(function(event) {
     event.preventDefault();
+    console.log('yes');
     var userName = $('input#username').val();
     var user = new User(userName);
-    $('#create-flashcard').slideDown();
+    $('form.flash-form').slideDown();
   });
 
 
