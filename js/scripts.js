@@ -34,7 +34,7 @@ $(function(){
     $('form#create-user').slideUp();
     $('#name-score-row').slideDown();
     console.log("help me");
-    $('#display-user-name').text(userName + ' wan shinobi');
+    $('#display-user-name').text(userName + ' wan Shinobi');
   } else {
     alert('enter name asshat')
   }
@@ -43,8 +43,8 @@ $(function(){
   $('form#create-flashcard').submit(function(event){
     event.preventDefault();
     var flashName = $('input#flash-name').val();
-    var flashSnippet = $('input#flash-snippet').val();
-    var flashAnswer = $('input#flash-answer').val();
+    var flashSnippet = $('textarea#flash-snippet').val();
+    var flashAnswer = $('textarea#flash-answer').val();
     flashLibrary['flash' + flashCounter] = new Flashcard(flashName, flashSnippet, flashAnswer);
     $('div#actual-list').children('ul').append('<li id="flash' + flashCounter + '" class="flash-item">' + flashName + '</li>');
     flashCounter++;
@@ -58,6 +58,17 @@ $(function(){
       console.log(flashLibrary[currentId].name);
       console.log(flashLibrary[currentId].snippet);
       console.log(flashLibrary[currentId].answer);
+  
+      $('form#user-answer').submit(function(event){
+        event.preventDefault();
+        $(".flashcard-test").hide();
+        if  (userAnswer === flashAnswer) {
+          $("#correct-result").show();
+        } else {
+          $("#dad-hates-you").show();
+        }
+
+      });
     });
   });
 });
