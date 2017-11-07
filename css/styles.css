@@ -2,6 +2,11 @@
   display: none;
 }
 
+#make-flashcard {
+  margin-top: 20px;
+  /*display: none;*/
+}
+
 body {
   background-color: rgba(94, 87, 104, 0.75);
 }
