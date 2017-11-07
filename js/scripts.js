@@ -35,7 +35,7 @@ $(function(){
     $('form#create-flashcard').slideDown();
     $('form#create-user').slideUp();
     $('#name-score-row').slideDown();
-    $('#display-user-name').text(userName + '-wan shinobi-san');
+    $('#display-user-name').text(userName + '-wan Shinobi-san');
   } else {
     alert('Enter your name, ninja')
   }
@@ -51,8 +51,8 @@ $(function(){
     flashCounter++;
     $('li.flash-item').last().click(function(){ // click to load current id
       currentId = $(this).attr('id');
-      $('li.flash-item').css('background-color', 'inherit');
-      $(this).css('background-color', 'white');
+      $('li.flash-item').css('color', 'inherit');
+      $(this).css('color', 'rgba(255, 248, 240, 1)');
     });
   });
   $('button#practice-flash').click(function(){
