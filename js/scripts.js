@@ -23,11 +23,16 @@ return isGuessCorrect;
 // FRONTEND
 $(function(){
   $('form#create-user').submit(function(event) {
+    if ($('input#username').val().length) {
     event.preventDefault();
     var userName = $('input#username').val();
     var user = new User(userName);
     console.log("help me");
     $('form#create-flashcard').slideDown();
+    $('form#create-user').slideUp();
+  } else {
+    alert('enter name asshat')
+  }
   });
 
 
