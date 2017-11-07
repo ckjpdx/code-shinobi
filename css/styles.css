@@ -1,5 +1,9 @@
 .modal-header .close {
-  margin: -15px -184px -15px auto;
+  margin: -15px -164px -15px auto;
+  /*justify-content: flex-end;*/
+
+
+
 }
 
 .hide {
