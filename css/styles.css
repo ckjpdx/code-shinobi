@@ -2,6 +2,10 @@
   display: none;
 }
 
+#name-score-row {
+  display: none;
+}
+
 #make-flashcard {
   margin-top: 20px;
   /*display: none;*/
