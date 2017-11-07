@@ -26,6 +26,7 @@ $(function(){
   var flashCounter = 1;
   var flashLibrary = {};
   var currentId;
+  var randomId;
   var user;
   $('form#create-user').submit(function(event) {
     if ($('input#username').val().length) {
@@ -36,11 +37,10 @@ $(function(){
     $('form#create-user').slideUp();
     $('#name-score-row').slideDown();
     $('#display-user-name').text(userName + '-wan Shinobi-san');
-  } else {
-    alert('Enter your name, ninja')
-  }
+    } else {
+      alert('Enter your name, ninja')
+    }
   });
-
   $('form#create-flashcard').submit(function(event){
     event.preventDefault();
     var flashName = $('input#flash-name').val();
@@ -60,23 +60,23 @@ $(function(){
     $("#correct-result").hide();
     $("#dad-hates-you").hide();
     $(".flashcard-test").show();
-    $('span#show-name').text(flashLibrary[currentId].name);
-    $('span#show-snippet').text(flashLibrary[currentId].snippet);
+    randomId = Object.keys(flashLibrary)[(Math.floor(Math.random() * Object.keys(flashLibrary).length))];
+    console.log(randomId);
+    $('span#show-name').text(flashLibrary[randomId].name);
+    $('span#show-snippet').text(flashLibrary[randomId].snippet);
   });
   $('button#update-flash').click(function(){
-
   });
   $('button#delete-flash').click(function(){
     $('li#' + currentId).remove();
     delete flashLibrary[currentId];
     console.log(flashLibrary);
   });
-
   $('button#check').click(function(){
     var userAnswer = $("input#user-answer").val();
     console.log(currentId);
     $(".flashcard-test").hide();
-    if  (userAnswer === flashLibrary[currentId].answer) {
+    if  (userAnswer === flashLibrary[randomId].answer) {
       $("#correct-result").show();
       $("#display-user-score").text(user.scoreUp());
     } else {
