@@ -1,5 +1,18 @@
+.modal-header .close {
+  margin: -15px -184px -15px auto;
+}
+
 .hide {
   display: none;
+}
+
+#actual-list {
+  cursor: pointer;
+  color: rgba(145, 11, 11, 1);
+}
+
+#actual-list:hover {
+  text-decoration: underline;
 }
 
 #make-flashcard {
