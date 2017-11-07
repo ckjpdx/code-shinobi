@@ -41,6 +41,7 @@ body {
   color: rgba(255, 248, 240, 1);
 }
 
+
 button {
   background-color: rgba(25, 29, 50, 1);
   border: 0;
@@ -48,6 +49,7 @@ button {
   display: block;
   width: 400px;
 }
+
 
 .modal {
   background-color: rgba(25, 29, 50, 0.5);
@@ -57,6 +59,7 @@ button {
 .modal-content {
   background-color: rgba(145, 11, 11, 0.85);
 }
+
 /*ninjacat palette*/
 /* RGB */
 $color1: rgba(25, 29, 50, 1); /*dark gunmetal*/

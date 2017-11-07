@@ -68,14 +68,14 @@
             <div class="modal-header">
               <h4 class="modal-title"><strong><span id="show-name"></span></strong></h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
+                <span aria-hidden="true" class="white-text">&times;</span>
               </button>
             </div>
 
             <div class="flashcard-test">
               <div class="modal-body">
                 <h5><strong>Your Snippet:</strong></h5>
-                <p><span id="show-snippet"></span></p>
+                <h4><span id="show-snippet"></span></h4>
                 <form id="user-answer">
                   <div class="form-group">
                     <label for="answer"><h5><strong>Your Answer:</stong></h5></label>
@@ -85,16 +85,18 @@
               </div>
               <div class="modal-footer">
                 <button id="check" type="button" class="btn">Check Your Code, ShinOBE!</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
             </div> <!--flash card test-->
 
-            <div id="correct-result" class="modal-body hide"> <!--correct result-->
-              <p>Great job, Shinobi.</p>
-              <img src="img/cowabunga.jpg" alt="teenage mutant ninja turtle thumbs up">
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
+            <div id="correct-result" class="modal-body hide">
+              <div class="row">
+                <div class="col-5">
+                  <img class="img-fluid" src="img/cowabunga.jpg" alt="teenage mutant ninja turtle thumbs up">
+                </div>
+                <div class="col-7">
+                  <p><strong>Great job, Shinobi.</strong></p>
+                </div>
+              </div> <!--row-->
             </div><!--correct result div-->
 
             <div id="dad-hates-you" class="modal-body hide"> <!-- dad hates you, remember that -->
