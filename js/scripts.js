@@ -35,7 +35,7 @@ $(function(){
     $('form#create-flashcard').slideDown();
     $('form#create-user').slideUp();
     $('#name-score-row').slideDown();
-    $('#display-user-name').text(userName + ' wan Shinobi');
+    $('#display-user-name').text(userName + '-wan shinobi-san');
   } else {
     alert('Enter your name, ninja')
   }
@@ -51,23 +51,36 @@ $(function(){
     flashCounter++;
     $('li.flash-item').last().click(function(){ // click to load current id
       currentId = $(this).attr('id');
-      $('#flashcard-modal').modal('show');
-      $("#correct-result").hide();
-      $("#dad-hates-you").hide();
-      $(".flashcard-test").show();
-      $('span#show-name').text(flashLibrary[currentId].name);
-      $('span#show-snippet').text(flashLibrary[currentId].snippet);
+      $('li.flash-item').css('background-color', 'inherit');
+      $(this).css('background-color', 'white');
     });
-    $('button#check').click(function(){
-      var userAnswer = $("input#user-answer").val();
-      $(".flashcard-test").hide();
-      if  (userAnswer === flashLibrary[currentId].answer) {
-        $("#correct-result").show();
-        debugger;
-        $("#display-user-score").text(user.scoreUp());
-      } else {
-        $("#dad-hates-you").show();
-      }
-    });
+  });
+  $('button#practice-flash').click(function(){
+    $('#flashcard-modal').modal('show');
+    $("#correct-result").hide();
+    $("#dad-hates-you").hide();
+    $(".flashcard-test").show();
+    $('span#show-name').text(flashLibrary[currentId].name);
+    $('span#show-snippet').text(flashLibrary[currentId].snippet);
+  });
+  $('button#update-flash').click(function(){
+
+  });
+  $('button#delete-flash').click(function(){
+    $('li#' + currentId).remove();
+    delete flashLibrary[currentId];
+    console.log(flashLibrary);
+  });
+
+  $('button#check').click(function(){
+    var userAnswer = $("input#user-answer").val();
+    console.log(currentId);
+    $(".flashcard-test").hide();
+    if  (userAnswer === flashLibrary[currentId].answer) {
+      $("#correct-result").show();
+      $("#display-user-score").text(user.scoreUp());
+    } else {
+      $("#dad-hates-you").show();
+    }
   });
 });
