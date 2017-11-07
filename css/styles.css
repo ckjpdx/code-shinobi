@@ -10,6 +10,7 @@
   display: none;
 }
 
+
 ul {
   font-size: 2em;
 }
@@ -21,6 +22,10 @@ ul {
 
 #actual-list:hover {
   text-decoration: underline;
+}
+
+#name-score-row {
+  display: none;
 }
 
 #make-flashcard {
