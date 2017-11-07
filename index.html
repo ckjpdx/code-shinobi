@@ -25,7 +25,7 @@
           <label class="h4" or="username">Tell us your name, Shinobi...</label>
           <input type="text" class="form-control" id="username" placeholder="Your name here">
           <div class="make-flashcard">
-            <button class="btn-lg mx-auto" id="make-flashcard" type="submit" name="button">Make Your Flashcard!</button>
+            <button class="btn-lg mx-auto our-button" id="make-flashcard" type="submit" name="button">Make Your Flashcard!</button>
           </div>
         </div>
       </form>
@@ -50,7 +50,7 @@
           <label for="flash-name">Flash Card Answer</label>
           <textarea rows="3" type="text" class="form-control" id="flash-answer" placeholder="Enter answer!"></textarea>
         </div>
-        <button class="btn-lg mx-auto" id="add-card" type="submit" name="button">Add Card to Your Library</button>
+        <button class="btn-lg mx-auto our-button" id="add-card" type="submit" name="button">Add Card to Your Library</button>
       </form><!--flash-form-->
 
       <div class="library">
@@ -62,13 +62,13 @@
       </div><!--library-->
 
       <!--flashcard modal-->
-      <div id="flashcard-modal" class="modal fade" tabindex="-1" role="dialog">
-        <div class="modal-dialog" role="document">
+      <div id="flashcard-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="false">
+        <div class="modal-dialog modal-notify modal-info" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title"><strong><span id="show-name"></span></strong></h4>
+              <h4 class="heading"><strong><span id="show-name"></span></strong></h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true" class="white-text">&times;</span>
+                <span aria-hidden="true" class="text-white">&times;</span>
               </button>
             </div>
 
@@ -84,7 +84,7 @@
                 </form>
               </div>
               <div class="modal-footer">
-                <button id="check" type="button" class="btn">Check Your Code, ShinOBE!</button>
+                <button id="check" type="button" class=" our-button btn">Check Your Code, ShinOBE!</button>
               </div>
             </div> <!--flash card test-->
 
