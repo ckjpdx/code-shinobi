@@ -5,6 +5,7 @@ function User(name) {
 }
 User.prototype.scoreUp = function () {
   this.points++;
+  return this.points;
 };
 
 function Flashcard(name, snippet, answer) {
@@ -25,18 +26,18 @@ $(function(){
   var flashCounter = 1;
   var flashLibrary = {};
   var currentId;
+  var user;
   $('form#create-user').submit(function(event) {
     if ($('input#username').val().length) {
     event.preventDefault();
     var userName = $('input#username').val();
-    var user = new User(userName);
+    user = new User(userName);
     $('form#create-flashcard').slideDown();
     $('form#create-user').slideUp();
     $('#name-score-row').slideDown();
-    console.log("help me");
     $('#display-user-name').text(userName + ' wan Shinobi');
   } else {
-    alert('enter name asshat')
+    alert('Enter your name, ninja')
   }
   });
 
@@ -51,15 +52,19 @@ $(function(){
     $('li.flash-item').last().click(function(){ // click to load current id
       currentId = $(this).attr('id');
       $('#flashcard-modal').modal('show');
+      $("#correct-result").hide();
+      $("#dad-hates-you").hide();
+      $(".flashcard-test").show();
       $('span#show-name').text(flashLibrary[currentId].name);
+      $('span#show-snippet').text(flashLibrary[currentId].snippet);
     });
-    $('button#check').click(function(event){
-      event.preventDefault();
-      console.log("what the f");
+    $('button#check').click(function(){
       var userAnswer = $("input#user-answer").val();
       $(".flashcard-test").hide();
       if  (userAnswer === flashLibrary[currentId].answer) {
         $("#correct-result").show();
+        debugger;
+        $("#display-user-score").text(user.scoreUp());
       } else {
         $("#dad-hates-you").show();
       }
