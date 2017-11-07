@@ -48,27 +48,23 @@ $(function(){
     flashLibrary['flash' + flashCounter] = new Flashcard(flashName, flashSnippet, flashAnswer);
     $('div#actual-list').children('ul').append('<li id="flash' + flashCounter + '" class="flash-item">' + flashName + '</li>');
     flashCounter++;
-    // $('div#actual-list').children('ul').last().click(function(){
-    //   $('span#show-name').text(flashName);
-    //   $('#flashcard-modal').modal('show');
-    // });
+    $('div#actual-list').children('ul').last().click(function(){
+    });
     $('li.flash-item').last().click(function(){ // click to load current id
-      console.log('clicked li');
       currentId = $(this).attr('id');
-      console.log(flashLibrary[currentId].name);
-      console.log(flashLibrary[currentId].snippet);
-      console.log(flashLibrary[currentId].answer);
-  
-      $('form#user-answer').submit(function(event){
-        event.preventDefault();
-        $(".flashcard-test").hide();
-        if  (userAnswer === flashAnswer) {
-          $("#correct-result").show();
-        } else {
-          $("#dad-hates-you").show();
-        }
-
-      });
+      $('#flashcard-modal').modal('show');
+      $('span#show-name').text(flashLibrary[currentId].name);
+    });
+    $('button#check').click(function(event){
+      event.preventDefault();
+      console.log("what the f");
+      var userAnswer = $("input#user-answer").val();
+      $(".flashcard-test").hide();
+      if  (userAnswer === flashLibrary[currentId].answer) {
+        $("#correct-result").show();
+      } else {
+        $("#dad-hates-you").show();
+      }
     });
   });
 });
