@@ -48,8 +48,6 @@ $(function(){
     flashLibrary['flash' + flashCounter] = new Flashcard(flashName, flashSnippet, flashAnswer);
     $('div#actual-list').children('ul').append('<li id="flash' + flashCounter + '" class="flash-item">' + flashName + '</li>');
     flashCounter++;
-    $('div#actual-list').children('ul').last().click(function(){
-    });
     $('li.flash-item').last().click(function(){ // click to load current id
       currentId = $(this).attr('id');
       $('#flashcard-modal').modal('show');
