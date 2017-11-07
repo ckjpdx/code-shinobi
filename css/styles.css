@@ -1,6 +1,23 @@
+.modal-header .close {
+  margin: -15px -184px -15px auto;
+}
+
 .hide {
   display: none;
 }
+
+
+ul {
+  font-size: 2em;
+}
+
+#actual-list {
+  cursor: pointer;
+  color: rgba(145, 11, 11, 1);
+}
+
+#actual-list:hover {
+  text-decoration: underline;
 
 #name-score-row {
   display: none;
@@ -25,6 +42,15 @@ button {
   color: rgba(255, 248, 240, 1);
   display: block;
   width: 400px;
+}
+
+.modal {
+  background-color: rgba(25, 29, 50, 0.5);
+  color: rgba(255, 248, 240, 1);
+}
+
+.modal-content {
+  background-color: rgba(145, 11, 11, 0.85);
 }
 /*ninjacat palette*/
 /* RGB */

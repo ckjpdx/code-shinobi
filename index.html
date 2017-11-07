@@ -50,7 +50,7 @@
           <label for="flash-name">Flash Card Answer</label>
           <textarea rows="3" type="text" class="form-control" id="flash-answer" placeholder="Enter answer!"></textarea>
         </div>
-        <button id="add-card" type="submit" name="button">Add Card to Your Library</button>
+        <button class="btn-lg mx-auto" id="add-card" type="submit" name="button">Add Card to Your Library</button>
       </form><!--flash-form-->
 
       <div class="library">
@@ -66,7 +66,7 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title"><span id="show-name"></span></h5>
+              <h4 class="modal-title"><strong><span id="show-name"></span></strong></h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -74,17 +74,17 @@
 
             <div class="flashcard-test">
               <div class="modal-body">
-                <h4><strong>Your Snippet:</strong></h4>
+                <h5><strong>Your Snippet:</strong></h5>
                 <p id="show-snippet"></p>
                 <form>
                   <div class="form-group">
-                    <label for="answer">Your Answer:</label>
+                    <label for="answer"><h5><strong>Your Answer:</stong></h5></label>
                     <input type="text" class="form-control" id="user-answer" placeholder="Enter answer here">
                   </div>
                 </form>
               </div>
               <div class="modal-footer">
-                <button type="submit" class="btn btn-primary">Check Your Code, Shinobi!</button>
+                <button type="submit" class="btn">Check Your Code, Shinobi!</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
               </div>
             </div> <!--flash card test-->
