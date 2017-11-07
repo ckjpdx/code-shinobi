@@ -1,15 +1,25 @@
 .hide {
   display: none;
 }
-
+.my-form {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
 
 ul {
   font-size: 2em;
 }
 
+#correct-result {
+text-align: center;
+}
+
 #actual-list {
   cursor: pointer;
   color: rgba(145, 11, 11, 1);
+  background: none;
 }
 
 #actual-list:hover {
@@ -23,6 +33,10 @@ ul {
 #make-flashcard {
   margin-top: 20px;
   /*display: none;*/
+}
+
+#dad-hates-you {
+  text-align: center;
 }
 
 body {
@@ -39,16 +53,6 @@ body {
   border: 0;
   color: rgba(255, 248, 240, 1);
   display: block;
-
-}
-.modal-header .close {
-  margin: -15px -178px -15px auto;
-  color: rgba(255, 248, 240, 1);
-  /*justify-content: flex-end;*/
-}
-
-.close {
-  cursor: pointer;
 }
 
 .modal-header {
@@ -57,12 +61,14 @@ body {
   color: rgba(255, 248, 240, 1);
 }
 
-
 .modal {
   background-color: rgba(25, 29, 50, 0.5);
 
 }
-
+.close {
+  margin: -15px -178px -15px auto;
+  cursor: pointer;
+}
 .modal-footer {
   background-color: rgba(255, 248, 240, 1);/*floral white*/
   rgba(25, 29, 50, 1);
@@ -72,6 +78,34 @@ body {
 .modal-body {
   background-color: rgba(255, 248, 240, 1);/*floral white*/
   rgba(25, 29, 50, 1);
+}
+
+#practice-flash {
+  margin-top: 5px;
+  background-color: rgba(145, 11, 11, 1);
+  border: none;
+  font-weight: bolder;
+}
+
+#delete-flash {
+  margin-top: 5px;
+  background-color: rgba(25, 29, 50, 1);
+  color: rgba(255, 248, 240, 1);
+  border: none;
+  font-weight: bolder;
+}
+
+#update-flash {
+  margin-top: 5px;
+  background-color: rgba(255, 248, 240, 1);
+  border: none;
+  color: rgba(25, 29, 50, 1);
+  font-weight: bolder;
+}
+
+#library-card {
+  background: none;
+  border: none;
 }
 
 /*ninjacat palette*/

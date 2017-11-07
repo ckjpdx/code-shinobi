@@ -23,7 +23,7 @@
       <form id="create-user">
         <div class="form-group">
           <label class="h4" or="username">Tell us your name, Shinobi...</label>
-          <input type="text" class="form-control" id="username" placeholder="Your name here">
+          <input type="text" class="my-form form-control" id="username" placeholder="Your name here">
           <div class="make-flashcard">
             <button class="btn-lg mx-auto our-button" id="make-flashcard" type="submit" name="button">Make Your Flashcard!</button>
           </div>
@@ -53,15 +53,18 @@
         <button class="btn-lg mx-auto our-button" id="add-card" type="submit" name="button">Add Card to Your Library</button>
       </form><!--flash-form-->
       <div class="text-center">
-        <button type="button" id="practice-flash" class="w-25 btn btn-success">Practice!</button>
-        <button type="button" id="update-flash" class="w-25 btn btn-info">Update</button>
-        <button type="button" id="delete-flash" class="w-25 btn btn-danger">Delete</button>
+        <button type="button" id="practice-flash" class="w-25 btn">Practice!</button>
+        <button type="button" id="update-flash" class="w-25 btn">Update!</button>
+        <button type="button" id="delete-flash" class="w-25 btn">Delete!</button>
       </div>
-      <div class="library">
-        <div class="col-md-4" id="actual-list">
-          <ul>
-            <!-- each card li goes here -->
-          </ul>
+
+      <div id="library-card" class="card col-md-4">
+        <div class="library">
+          <div id="actual-list">
+            <ul>
+              <!-- each card li goes here -->
+            </ul>
+          </div>
         </div>
       </div><!--library-->
 
@@ -93,22 +96,13 @@
             </div> <!--flash card test-->
 
             <div id="correct-result" class="modal-body hide">
-              <div class="row">
-                <div class="col-5">
-                  <img class="img-fluid" src="img/cowabunga.jpg" alt="teenage mutant ninja turtle thumbs up">
-                </div>
-                <div class="col-7">
-                  <p><strong>Great job, Shinobi.</strong></p>
-                </div>
-              </div> <!--row-->
+              <p id="shinobi">Great job, Shinobi.</p>
+              <img class="img-fluid" src="img/cowabunga.jpg" alt="teenage mutant ninja turtle thumbs up">
             </div><!--correct result div-->
 
             <div id="dad-hates-you" class="modal-body hide"> <!-- dad hates you, remember that -->
               <p>Umm...</p>
-              <img src="img/wtf.jpg" alt="jean luc is upset">
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              </div>
+              <img id="jean-luc" src="img/wtf.jpg" alt="jean luc is upset">
             </div><!--dad hates you div-->
           </div>
         </div>
