@@ -22,6 +22,9 @@ return isGuessCorrect;
 
 // FRONTEND
 $(function(){
+  var flashCounter = 1;
+  var flashLibrary = {};
+  var currentId;
   $('form#create-user').submit(function(event) {
     if ($('input#username').val().length) {
     event.preventDefault();
@@ -37,12 +40,12 @@ $(function(){
   }
   });
 
-
   $('form#create-flashcard').submit(function(event){
     event.preventDefault();
     var flashName = $('input#flash-name').val();
     var flashSnippet = $('textarea#flash-snippet').val();
     var flashAnswer = $('textarea#flash-answer').val();
+<<<<<<< HEAD
     var flashcard = new Flashcard(flashName, flashSnippet, flashAnswer);
     $('div#actual-list').children('ul').append('<li>' + flashName + '</li>');
     $('div#actual-list').children('ul').last().click(function(){
@@ -52,6 +55,23 @@ $(function(){
       $('#flashcard-modal').modal('show');
 
     $('form#user-answer').submit(function(event){
+=======
+    flashLibrary['flash' + flashCounter] = new Flashcard(flashName, flashSnippet, flashAnswer);
+    $('div#actual-list').children('ul').append('<li id="flash' + flashCounter + '" class="flash-item">' + flashName + '</li>');
+    flashCounter++;
+    // $('div#actual-list').children('ul').last().click(function(){
+    //   $('span#show-name').text(flashName);
+    //   $('#flashcard-modal').modal('show');
+    // });
+    $('li.flash-item').last().click(function(){ // click to load current id
+      console.log('clicked li');
+      currentId = $(this).attr('id');
+      console.log(flashLibrary[currentId].name);
+      console.log(flashLibrary[currentId].snippet);
+      console.log(flashLibrary[currentId].answer);
+  
+      $('form#user-answer').submit(function(event){
+>>>>>>> master
         event.preventDefault();
         console.log("helloooooooooo");
         $(".flashcard-test").hide();
