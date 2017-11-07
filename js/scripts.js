@@ -58,16 +58,16 @@ $(function(){
       $('span#show-name').text(flashLibrary[currentId].name);
       $('span#show-snippet').text(flashLibrary[currentId].snippet);
     });
-    $('button#check').click(function(){
-      var userAnswer = $("input#user-answer").val();
-      $(".flashcard-test").hide();
-      if  (userAnswer === flashLibrary[currentId].answer) {
-        $("#correct-result").show();
-        debugger;
-        $("#display-user-score").text(user.scoreUp());
-      } else {
-        $("#dad-hates-you").show();
-      }
-    });
+  });
+  $('button#check').click(function(){
+    var userAnswer = $("input#user-answer").val();
+    console.log(currentId);
+    $(".flashcard-test").hide();
+    if  (userAnswer === flashLibrary[currentId].answer) {
+      $("#correct-result").show();
+      $("#display-user-score").text(user.scoreUp());
+    } else {
+      $("#dad-hates-you").show();
+    }
   });
 });
