@@ -1,8 +1,14 @@
 .hide {
   display: none;
 }
+.my-form {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
 
-
+}
 ul {
   font-size: 2em;
 }
