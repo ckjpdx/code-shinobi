@@ -45,17 +45,6 @@ $(function(){
     var flashName = $('input#flash-name').val();
     var flashSnippet = $('textarea#flash-snippet').val();
     var flashAnswer = $('textarea#flash-answer').val();
-<<<<<<< HEAD
-    var flashcard = new Flashcard(flashName, flashSnippet, flashAnswer);
-    $('div#actual-list').children('ul').append('<li>' + flashName + '</li>');
-    $('div#actual-list').children('ul').last().click(function(){
-      $('span#show-name').text(flashName);
-      $('span#show-snippet').text(flashSnippet);
-      var userAnswer = $("input#user-answer").val();
-      $('#flashcard-modal').modal('show');
-
-    $('form#user-answer').submit(function(event){
-=======
     flashLibrary['flash' + flashCounter] = new Flashcard(flashName, flashSnippet, flashAnswer);
     $('div#actual-list').children('ul').append('<li id="flash' + flashCounter + '" class="flash-item">' + flashName + '</li>');
     flashCounter++;
@@ -69,9 +58,8 @@ $(function(){
       console.log(flashLibrary[currentId].name);
       console.log(flashLibrary[currentId].snippet);
       console.log(flashLibrary[currentId].answer);
-  
+
       $('form#user-answer').submit(function(event){
->>>>>>> master
         event.preventDefault();
         console.log("helloooooooooo");
         $(".flashcard-test").hide();
