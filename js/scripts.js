@@ -41,7 +41,7 @@ $(function(){
 
   $('button#lets-do-this').click(function() {
     $("#carousel-controls").slideUp();
-    $("form#create-user").slideDown();
+    $("#user-div").slideDown();
   });
 
   $('form#create-user').submit(function(event) {
@@ -50,7 +50,7 @@ $(function(){
     var userName = $('input#username').val();
     user = new User(userName);
     $('form#create-flashcard').slideDown();
-    $('form#create-user').slideUp();
+    $('#user-div').slideUp();
     $('#name-score-row').slideDown();
     $('#display-user-name').text(userName + '-wan Shinobi-san');
     } else {

@@ -48,16 +48,17 @@
         </a>
       </div><!--carousel-->
 
-      <div class="user-div">
-        <form class="hide" id="create-user">
-          <div class="form-group">
-            <label class="h4" or="username">Tell us your name, Shinobi...</label>
-            <input type="text" class="my-form" id="username" placeholder="Your name here">
-            <div class="make-flashcard">
-              <button class="btn-lg mx-auto our-button" id="make-flashcard" type="submit" name="button">Button Title TBD</button>
+      <div class="row hide" id="user-div">
+        <div class="col-8 offset-2">
+          <form id="create-user">
+            <div class="form-group">
+              <input type="text" class="my-form" id="username" placeholder="Tell us your name, Shinobi...">
+              <div class="make-flashcard">
+                <button class="btn-lg mx-auto our-button" id="make-flashcard" type="submit" name="button">Begin your training!</button>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
 
       <div id="name-score-row" class="row">
@@ -69,17 +70,17 @@
         </div>
       </div>
       <form id="create-flashcard" class="flash-form hide">
-        <div class="form-group">
-          <label for="flash-name">Flash Card Name</label>
-          <input type="text" id="flash-name">
+        <div class="form-group name-snippet-answer">
+          <label></label>
+          <input type="text" id="flash-name" placeholder="Enter Flashcard Name Here">
         </div>
-        <div class="form-group">
-          <label for="flash-snippet">Flash Card Snippet</label>
-          <textarea rows="3" type="text" id="flash-snippet"></textarea>
+        <div class="form-group name-snippet-answer">
+          <label></label>
+          <textarea placeholder="Type Your Code Snippet Here" rows="3" type="text" id="flash-snippet"></textarea>
         </div>
-        <div class="form-group">
-          <label for="flash-name">Flash Card Answer</label>
-          <input type="text" id="flash-answer">
+        <div class="form-group name-snippet-answer">
+          <label></label>
+          <input placeholder="Enter Your Answer Here" type="text" id="flash-answer">
         </div>
         <button class="btn-lg mx-auto our-button" id="add-card" type="submit" name="button">Add Card to Your Library</button>
       </form><!--flash-form-->
