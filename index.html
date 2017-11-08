@@ -12,63 +12,54 @@
     <script src="js/scripts.js" type="text/javascript"></script>
   </head>
   <body>
+    <div class="container-fluid">
+      <div id="carousel-controls" class="carousel slide" data-interval="false" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a href="#"><img class="carousel-img" rel=""src="css/bamboo.jpg" alt="tough shinobi"></a>
+            <div class="carousel-caption">
+              <h1 class="display-1">Obi Code Shinobi</h1>
+              <h4 class="display-3">Kick code's butt!</h4>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img id="code" class="carousel-img" src="css/code.jpg" alt="tough shinobi"></a>
+            <div class="carousel-caption">
+              <h1 class="display-1">Train. Learn. Succeed.</h1>
+              <h4 class="display-3">Here's how you do it: blah blah blah blah</h4>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <a href="#"><img class="carousel-img" src="css/forest.jpg" alt="tough shinobi"></a>
+            <div class="carousel-caption">
+              <h1 class="display-1">Are you ready, Shinobi?</h1>
+              <h4 class="display-3">Let's do this.</h4>
+              <button class="btn-lg mx-auto" id="lets-do-this" type="button" name="button">Go!</button>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel-controls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel-controls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div><!--carousel-->
 
-    <div id="carousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carousel" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel" data-slide-to="1"></li>
-        <li data-target="#carousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <a href="#"><img class="carousel-img" rel=""src="css/bamboo.jpg" alt="tough shinobi"></a>
-          <div class="carousel-caption">
-            <h3>Obi Code Shinobi</h3>
-            <p>Kick code's butt!</p>
+      <div class="user-div">
+        <form class="hide" id="create-user">
+          <div class="form-group">
+            <label class="h4" or="username">Tell us your name, Shinobi...</label>
+            <input type="text" class="my-form" id="username" placeholder="Your name here">
+            <div class="make-flashcard">
+              <button class="btn-lg mx-auto our-button" id="make-flashcard" type="submit" name="button">Button Title TBD</button>
+            </div>
           </div>
-        </div>
-        <div class="carousel-item">
-          <a href="#"><img class="carousel-img" src="css/code.jpg" alt="tough shinobi"></a>
-          <div class="carousel-caption">
-            <h3>Train. Learn. Succeed.</h3>
-            <p>Here's how you do it: blah blah blah blah</p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <a href="#"><img class="carousel-img" src="css/forest.jpg" alt="tough shinobi"></a>
-          <div class="carousel-caption">
-            <h3>Are you ready, Shinobi?</h3>
-            <p>Let's do this.</p>
-          </div>
-        </div>
+        </form>
       </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="false"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="false"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div><!--carousel-->
 
-    <!-- <div class="container-fluid">
-      <div class="jumbotron">
-        <h1 class="display-3">Obi Code Shinobi: Become a Code Master</h1>
-          <h3 class="lead">Create your own flashcards to guide you to code enlightenment.</h3>
-      </div>
-    </div><!fluid container-->
-
-    <div class="container">
-      <!-- <form id="create-user">
-        <div class="form-group">
-          <label class="h4" or="username">Tell us your name, Shinobi...</label>
-          <input type="text" class="my-form" id="username" placeholder="Your name here">
-          <div class="make-flashcard">
-            <button class="btn-lg mx-auto our-button" id="make-flashcard" type="submit" name="button">Make Your Flashcard!</button>
-          </div>
-        </div>
-      </form> -->
       <div id="name-score-row" class="row">
         <div class="col-4">
           <h3 id='display-user-name'></h3>
@@ -92,10 +83,10 @@
         </div>
         <button class="btn-lg mx-auto our-button" id="add-card" type="submit" name="button">Add Card to Your Library</button>
       </form><!--flash-form-->
-      <!-- <div class="text-center">
+      <div id="study-button" class="text-center hide">
         <button type="button" id="practice-flash" class="w-25 btn">Practice!</button>
         <button type="button" id="delete-flash" class="w-25 btn">Delete!</button>
-      </div> -->
+      </div>
 
       <div id="library-card" class="card col-md-4">
         <div class="library">
