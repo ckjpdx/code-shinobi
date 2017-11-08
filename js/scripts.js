@@ -99,12 +99,12 @@ $(function(){
       modalText();
       }
     } else {
-      $(".flashcard-test").hide()
+      $(".flashcard-test").hide();
       $("#dad-hates-you").show();
     }
   });
   $('button#try-again').click(function(){
     $("#dad-hates-you").hide();
-    $(".flashcard-test").show()
+    $(".flashcard-test").show();
   });
 });
