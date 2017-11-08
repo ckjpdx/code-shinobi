@@ -57,6 +57,7 @@ label {
     margin: 25px auto 0;
     text-align: center;
     text-decoration: underline;
+    font-size: 2em;
 }
 #actual-list {
   cursor: pointer;

@@ -83,7 +83,8 @@ $(function(){
     delete flashLibrary[currentId];
     console.log(flashLibrary);
   });
-  $('button#check').click(function(){
+  $('button#check').click(function(event) {
+    event.preventDefault();
     var userAnswer = $("input#user-answer").val();
     console.log(currentId);
     if (userAnswer === flashLibrary[randomId].answer) {
