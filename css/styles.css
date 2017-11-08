@@ -3,6 +3,7 @@
 }
 textarea::-webkit-input-placeholder {
   color: white !important;
+
 }
 textarea:-moz-placeholder { /* Firefox 18- */
 	color: white !important;
@@ -25,6 +26,27 @@ input::-moz-placeholder {  /* Firefox 19+ */
 input:-ms-input-placeholder {
 	color: white !important;
 }
+
+input#username {
+  font-size: 3em;
+}
+
+input#flash-name {
+  font-size: 2em;
+}
+
+textarea#flash-snippet {
+  font-size: 2em;
+}
+
+input#flash-answer {
+  font-size: 2em;
+}
+
+textarea#flash-snippet, input#flash-answer, input#flash-name {
+  margin-bottom: 100px;
+}
+
 input {
   border: none;
   outline: none;
@@ -82,14 +104,31 @@ height: 100%
 
 #name-score-row {
   display: none;
+  color: rgba(145, 11, 11, 1);
+  margin-top: 10%;
 }
 
 #make-flashcard {
+  background-color: rgba(25, 29, 50, 1);
+  border: 0;
+  color: rgba(255, 248, 240, 1);
+  display: block;
+  border-radius: 10px;
+  width: 242px;
+  height: 120px;
+  font-size: 2em;
   margin-top: 20px;
-  /*display: none;*/
 }
 #add-card {
-  margin: 12px;
+  background-color: rgba(25, 29, 50, 1);
+  border: 0;
+  color: rgba(255, 248, 240, 1);
+  display: block;
+  border-radius: 10px;
+  width: 242px;
+  height: 120px;
+  font-size: 2em;
+  margin-top: 20px;
 }
 
 body {
@@ -109,15 +148,14 @@ body {
   color: rgba(255, 248, 240, 1);
   display: block;
   border-radius: 30px;
-
 }
 
-.user-div {
-  justify-content: center;
+#user-div {
   align-items: center;
+  margin-top: 20%;
 }
 #lets-do-this {
-  background-color: rgb(112, 35, 7);
+  background-color: rgba(25, 29, 50, 1);
   border: 0;
   color: rgba(255, 248, 240, 1);
   display: block;
@@ -131,7 +169,6 @@ body {
   color: rgba(255, 248, 240, 1);
   /*justify-content: flex-end;*/
 }
-
 
 .close {
   cursor: pointer;
