@@ -38,6 +38,12 @@ $(function(){
     randomCardIndex = (Math.floor(Math.random() * remainingCards.length));
     randomId = remainingCards[randomCardIndex];
   }
+
+  $('button#lets-do-this').click(function() {
+    $("#carousel-controls").slideUp();
+    $("form#create-user").slideDown();
+  });
+
   $('form#create-user').submit(function(event) {
     if ($('input#username').val().length) {
     event.preventDefault();

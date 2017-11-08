@@ -60,6 +60,14 @@ label {
     font-size: 2em;
 }
 
+.carousel-img {
+  opacity: 0.6;
+}
+
+.carousel-caption {
+  bottom: 300px;
+}
+
 img .carousel-img{
 width: 100%;
 height: 100%
@@ -102,6 +110,21 @@ body {
   display: block;
   border-radius: 30px;
 
+}
+
+.user-div {
+  justify-content: center;
+  align-items: center;
+}
+#lets-do-this {
+  background-color: rgb(112, 35, 7);
+  border: 0;
+  color: rgba(255, 248, 240, 1);
+  display: block;
+  border-radius: 10px;
+  width: 242px;
+  height: 70px;
+  font-size: 2em;
 }
 .modal-header .close {
   /*margin: -15px -178px -15px auto;*/
