@@ -110,6 +110,8 @@ height: 100%
 #actual-list {
   cursor: pointer;
   color: rgba(145, 11, 11, 1);
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 #name-score-row {
@@ -130,15 +132,16 @@ height: 100%
   margin-top: 20px;
 }
 #add-card {
-  background-color: rgba(25, 29, 50, 1);
-  border: 0;
+  margin-top: 5px;
+  background-color: rgba(145, 11, 11, 1);
   color: rgba(255, 248, 240, 1);
-  display: block;
+  border: none;
+  font-weight: bolder;
   border-radius: 10px;
-  width: 242px;
-  height: 120px;
+  width: 30%;
+  height: 70px;
   font-size: 2em;
-  margin-top: 20px;
+
 }
 
 body {
@@ -212,11 +215,14 @@ body {
 }
 #practice-flash {
   margin-top: 5px;
-  background-color: rgba(145, 11, 11, 1);
+  background-color: rgba(25, 29, 50, 1);
   color: rgba(255, 248, 240, 1);
   border: none;
   font-weight: bolder;
-  border-radius: 30px;
+  border-radius: 10px;
+  width: 242px;
+  height: 70px;
+  font-size: 2em;
 }
 
 #delete-flash {
@@ -225,7 +231,10 @@ body {
   color: rgba(255, 248, 240, 1);
   border: none;
   font-weight: bolder;
-  border-radius: 30px;
+  border-radius: 10px;
+  width: 242px;
+  height: 70px;
+  font-size: 2em;
 }
 #update-flash {
   margin-top: 5px;
