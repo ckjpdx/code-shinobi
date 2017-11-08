@@ -1,25 +1,70 @@
 .hide {
   display: none;
 }
-.my-form {
+textarea::-webkit-input-placeholder {
+  color: white !important;
+}
+textarea:-moz-placeholder { /* Firefox 18- */
+	color: white !important;
+}
+textarea::-moz-placeholder {  /* Firefox 19+ */
+  color: white !important;
+}
+textarea:-ms-input-placeholder {
+	color: white !important;
+}
+input::-webkit-input-placeholder {
+  color: white !important;
+}
+input:-moz-placeholder { /* Firefox 18- */
+	color: white !important;
+}
+input::-moz-placeholder {  /* Firefox 19+ */
+  color: white !important;
+}
+input:-ms-input-placeholder {
+	color: white !important;
+}
+input, textarea {
   border: none;
   outline: none;
   background: none;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
+input, textarea {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  border-bottom: 3px solid rgba(255, 248, 240, .8);;
+  text-align: center;
+}
+
+$contW: 900px;
+$imgW: 260px;
+$formW: $contW - $imgW;
+$switchAT: 1.2s;
+
+$inputW: 260px;
+$btnH: 36px;
+
+$diffRatio: ($contW - $imgW) / $contW;
+
 
 ul {
   font-size: 2em;
 }
-
-#correct-result {
-text-align: center;
+label {
+    display: block;
+    width: 260px;
+    margin: 25px auto 0;
+    text-align: center;
 }
 
 #actual-list {
   cursor: pointer;
   color: rgba(145, 11, 11, 1);
-  background: none;
 }
 
 #actual-list:hover {
@@ -33,10 +78,6 @@ text-align: center;
 #make-flashcard {
   margin-top: 20px;
   /*display: none;*/
-}
-
-#dad-hates-you {
-  text-align: center;
 }
 
 body {
@@ -53,6 +94,16 @@ body {
   border: 0;
   color: rgba(255, 248, 240, 1);
   display: block;
+
+}
+.modal-header .close {
+  margin: -15px -178px -15px auto;
+  color: rgba(255, 248, 240, 1);
+  /*justify-content: flex-end;*/
+}
+
+.close {
+  cursor: pointer;
 }
 
 .modal-header {
@@ -61,14 +112,12 @@ body {
   color: rgba(255, 248, 240, 1);
 }
 
+
 .modal {
   background-color: rgba(25, 29, 50, 0.5);
 
 }
-.close {
-  margin: -15px -178px -15px auto;
-  cursor: pointer;
-}
+
 .modal-footer {
   background-color: rgba(255, 248, 240, 1);/*floral white*/
   rgba(25, 29, 50, 1);
@@ -78,34 +127,6 @@ body {
 .modal-body {
   background-color: rgba(255, 248, 240, 1);/*floral white*/
   rgba(25, 29, 50, 1);
-}
-
-#practice-flash {
-  margin-top: 5px;
-  background-color: rgba(145, 11, 11, 1);
-  border: none;
-  font-weight: bolder;
-}
-
-#delete-flash {
-  margin-top: 5px;
-  background-color: rgba(25, 29, 50, 1);
-  color: rgba(255, 248, 240, 1);
-  border: none;
-  font-weight: bolder;
-}
-
-#update-flash {
-  margin-top: 5px;
-  background-color: rgba(255, 248, 240, 1);
-  border: none;
-  color: rgba(25, 29, 50, 1);
-  font-weight: bolder;
-}
-
-#library-card {
-  background: none;
-  border: none;
 }
 
 /*ninjacat palette*/
