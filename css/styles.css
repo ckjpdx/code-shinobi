@@ -59,6 +59,10 @@ label {
     text-decoration: underline;
     font-size: 2em;
 }
+
+.carousel-img {
+
+}
 #actual-list {
   cursor: pointer;
   color: rgba(145, 11, 11, 1);
