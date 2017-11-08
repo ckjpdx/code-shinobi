@@ -75,21 +75,16 @@ $(function(){
     console.log(randomId);
     modalText();
   });
-  $('button#update-flash').click(function(){
-  });
   $('button#delete-flash').click(function(){
     $('li#' + currentId).remove();
     delete flashLibrary[currentId];
-    console.log(flashLibrary);
   });
   $('button#check').click(function(event) {
     event.preventDefault();
     var userAnswer = $("input#user-answer").val();
-    console.log(randomId);
-    console.log(flashLibrary[randomId]);
-    console.log('answer: ');console.log(userAnswer);
     if (userAnswer === flashLibrary[randomId].answer) {
       $("#display-user-score").text(user.scoreUp());
+      $('li#' + randomId).append('<i class="fa fa-star-o" aria-hidden="true"></i>');
       if (remainingCards.length === 1) {
         $("#correct-result").show();
         $(".flashcard-test").hide();
@@ -99,12 +94,12 @@ $(function(){
       modalText();
       }
     } else {
-      $(".flashcard-test").hide()
+      $(".flashcard-test").hide();
       $("#dad-hates-you").show();
     }
   });
   $('button#try-again').click(function(){
     $("#dad-hates-you").hide();
-    $(".flashcard-test").show()
+    $(".flashcard-test").show();
   });
 });
