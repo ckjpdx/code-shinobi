@@ -8,9 +8,10 @@
 
 This is a website for a user to create custom code flashcards for learning/practicing code.
 
- - the user first makes a custom flashcard.
- - the user can access their library of custom flashcards.
- - the user will provide missing snippet in flashcard; if correct, they accumulate points
+ - The user enters their name
+ - The is able to make their custom flashcard, with a code snippet with a section they would like to remember x'd out, they also provide a name and answer for the flashcard.
+ - The user can access their library of custom flashcards, and delete any cards they want.
+ - The user is able to practice their flashcards, which will pop up a guessing game, where the user will provide missing snippet in flashcard; if correct, they accumulate points/stars.
 
 ### Specs
 | Spec | Input | Output |
@@ -38,6 +39,6 @@ This is a website for a user to create custom code flashcards for learning/pract
 
 ### License
 
-*{This software is licensed under the MIT license}*
+*This software is licensed under the MIT license*
 
 Copyright (c) 2017 **Nathan Barrett, Jack Knight-Johnson, Ginger Lee Kretschmer, Cat Janowitz**
