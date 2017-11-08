@@ -57,7 +57,7 @@ $(function(){
     var flashSnippet = $('textarea#flash-snippet').val();
     var flashAnswer = $('textarea#flash-answer').val();
     flashLibrary['flash' + flashCounter] = new Flashcard(flashName, flashSnippet, flashAnswer);
-    $('div#actual-list').children('ul').append('<li id="flash' + flashCounter + '" class="flash-item">' + flashName + '</li>');
+    $('div#actual-list').children('ul').append('<li id="flash' + flashCounter + '" class="flash-item">' + '<i class="fa-li fa fa-book"></i>' + flashName + '</li>');
     flashCounter++;
     $('li.flash-item').last().click(function(){ // click to load current id
       currentId = $(this).attr('id');

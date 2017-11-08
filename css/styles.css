@@ -25,11 +25,18 @@ input::-moz-placeholder {  /* Firefox 19+ */
 input:-ms-input-placeholder {
 	color: white !important;
 }
-input, textarea {
+input {
   border: none;
   outline: none;
   background: none;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+textarea {
+  border: none;
+  outline: none;
+  background: none;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  border: 3px solid rgba(255, 248, 240, .8);
 }
 input, textarea {
   display: block;
@@ -37,36 +44,24 @@ input, textarea {
   margin-top: 5px;
   padding-bottom: 5px;
   font-size: 16px;
-  border-bottom: 3px solid rgba(255, 248, 240, .8);;
+  border-bottom: 3px solid rgba(255, 248, 240, .8);
   text-align: center;
+  color: white;
 }
-
-$contW: 900px;
-$imgW: 260px;
-$formW: $contW - $imgW;
-$switchAT: 1.2s;
-
-$inputW: 260px;
-$btnH: 36px;
-
-$diffRatio: ($contW - $imgW) / $contW;
-
-
 ul {
   font-size: 2em;
 }
 label {
     display: block;
-    width: 260px;
+    width: 300px;
     margin: 25px auto 0;
     text-align: center;
+    text-decoration: underline;
 }
-
 #actual-list {
   cursor: pointer;
   color: rgba(145, 11, 11, 1);
 }
-
 #actual-list:hover {
   text-decoration: underline;
 }
@@ -79,9 +74,14 @@ label {
   margin-top: 20px;
   /*display: none;*/
 }
+#add-card {
+  margin: 12px;
+}
 
 body {
-  background-color: rgba(94, 87, 104, 0.75);
+  /*background-color: rgba(94, 87, 104, 0.75);*/
+  background: repeating-linear-gradient(to right, rgb(125,126,125),rgb(14,14,14)); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  color: rgba(255, 248, 240, 1);
 }
 .jumbotron {
   background-color: rgba(145, 11, 11, 0.75);
@@ -94,10 +94,11 @@ body {
   border: 0;
   color: rgba(255, 248, 240, 1);
   display: block;
+  border-radius: 30px;
 
 }
 .modal-header .close {
-  margin: -15px -178px -15px auto;
+  /*margin: -15px -178px -15px auto;*/
   color: rgba(255, 248, 240, 1);
   /*justify-content: flex-end;*/
 }
@@ -112,12 +113,16 @@ body {
   color: rgba(255, 248, 240, 1);
 }
 
-
 .modal {
   background-color: rgba(25, 29, 50, 0.5);
 
 }
-
+#dad-hates-you {
+  text-align: center;
+}
+#correct-result {
+  text-align: center;
+}
 .modal-footer {
   background-color: rgba(255, 248, 240, 1);/*floral white*/
   rgba(25, 29, 50, 1);
@@ -126,7 +131,37 @@ body {
 
 .modal-body {
   background-color: rgba(255, 248, 240, 1);/*floral white*/
-  rgba(25, 29, 50, 1);
+  color: rgba(25, 29, 50, 1);
+}
+#practice-flash {
+  margin-top: 5px;
+  background-color: rgba(145, 11, 11, 1);
+  color: rgba(255, 248, 240, 1);
+  border: none;
+  font-weight: bolder;
+  border-radius: 30px;
+}
+
+#delete-flash {
+  margin-top: 5px;
+  background-color: rgba(25, 29, 50, 1);
+  color: rgba(255, 248, 240, 1);
+  border: none;
+  font-weight: bolder;
+  border-radius: 30px;
+}
+#update-flash {
+  margin-top: 5px;
+  background-color: rgba(255, 248, 240, 1);
+  border: none;
+  color: rgba(25, 29, 50, 1);
+  font-weight: bolder;
+  border-radius: 30px;
+}
+
+#library-card {
+  background: none;
+  border: none;
 }
 
 /*ninjacat palette*/
