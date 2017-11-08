@@ -41,17 +41,6 @@ input, textarea {
   text-align: center;
 }
 
-$contW: 900px;
-$imgW: 260px;
-$formW: $contW - $imgW;
-$switchAT: 1.2s;
-
-$inputW: 260px;
-$btnH: 36px;
-
-$diffRatio: ($contW - $imgW) / $contW;
-
-
 ul {
   font-size: 2em;
 }
@@ -112,12 +101,16 @@ body {
   color: rgba(255, 248, 240, 1);
 }
 
-
 .modal {
   background-color: rgba(25, 29, 50, 0.5);
 
 }
-
+#dad-hates-you {
+  text-align: center;
+}
+#correct-result {
+  text-align: center;
+}
 .modal-footer {
   background-color: rgba(255, 248, 240, 1);/*floral white*/
   rgba(25, 29, 50, 1);
@@ -127,6 +120,32 @@ body {
 .modal-body {
   background-color: rgba(255, 248, 240, 1);/*floral white*/
   rgba(25, 29, 50, 1);
+}
+#practice-flash {
+  margin-top: 5px;
+  background-color: rgba(145, 11, 11, 1);
+  border: none;
+  font-weight: bolder;
+}
+
+#delete-flash {
+  margin-top: 5px;
+  background-color: rgba(25, 29, 50, 1);
+  color: rgba(255, 248, 240, 1);
+  border: none;
+  font-weight: bolder;
+}
+#update-flash {
+  margin-top: 5px;
+  background-color: rgba(255, 248, 240, 1);
+  border: none;
+  color: rgba(25, 29, 50, 1);
+  font-weight: bolder;
+}
+
+#library-card {
+  background: none;
+  border: none;
 }
 
 /*ninjacat palette*/
