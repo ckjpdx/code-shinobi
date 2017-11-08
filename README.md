@@ -1,6 +1,6 @@
 # Obi Code Shinobi Group Project
 
-#### This program takes the user's pizza prefrences and gives them an appropriate price for their pizza.
+#### This program makes flashcards with the user's code snippets and items blocked out, and creates a quiz for them to practice these blocked out items they want to remember.
 
 #### By **Nathan Barrett, Jack Knight-Johnson, Ginger Lee Kretschmer, Cat Janowitz**
 
