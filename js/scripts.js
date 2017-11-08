@@ -53,6 +53,7 @@ $(function(){
     $('#user-div').slideUp();
     $('#name-score-row').slideDown();
     $('#display-user-name').text(userName + '-wan Shinobi-san');
+    $('#study-button').slideDown();
     } else {
       alert('Enter your name, ninja')
     }
@@ -63,12 +64,14 @@ $(function(){
     var flashSnippet = $('textarea#flash-snippet').val();
     var flashAnswer = $('input#flash-answer').val();
     flashLibrary['flash' + flashCounter] = new Flashcard(flashName, flashSnippet, flashAnswer);
-    $('div#actual-list').children('ul').append('<li id="flash' + flashCounter + '" class="flash-item">' + '<i class="fa-li fa fa-book"></i>' + flashName + '</li>');
+    $('div#actual-list').append('<div id="flash' + flashCounter + '" class="flash-item">' + '<h4><i class="fa fa-book"></i> ' + flashName + '</h4><div class="flash-item-snippet"><p>' + flashSnippet + '</p></div></div>');
     flashCounter++;
-    $('li.flash-item').last().click(function(){ // click to load current id
+    $('div.flash-item').last().click(function(){ // click to load current id
       currentId = $(this).attr('id');
-      $('li.flash-item').css('color', 'inherit');
+      $('div.flash-item').css('color', 'inherit');
       $(this).css('color', 'rgba(255, 248, 240, 1)');
+      $('div.flash-item').children('div.flash-item-snippet').slideUp();
+      $(this).children().slideDown();
     });
   });
   $('button#practice-flash').click(function(){
@@ -82,7 +85,7 @@ $(function(){
     modalText();
   });
   $('button#delete-flash').click(function(){
-    $('li#' + currentId).remove();
+    $('div#' + currentId).remove();
     delete flashLibrary[currentId];
   });
   $('button#check').click(function(event) {
@@ -90,7 +93,7 @@ $(function(){
     var userAnswer = $("input#user-answer").val();
     if (userAnswer === flashLibrary[randomId].answer) {
       $("#display-user-score").text(user.scoreUp());
-      $('li#' + randomId).append('<i class="fa fa-star-o" aria-hidden="true"></i>');
+      $('div#' + randomId).append('<i class="fa fa-star-o" aria-hidden="true"></i>');
       if (remainingCards.length === 1) {
         $("#correct-result").show();
         $(".flashcard-test").hide();

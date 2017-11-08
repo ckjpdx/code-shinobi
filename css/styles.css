@@ -74,12 +74,12 @@ ul {
   font-size: 2em;
 }
 label {
-    display: block;
-    width: 300px;
-    margin: 25px auto 0;
-    text-align: center;
-    text-decoration: underline;
-    font-size: 2em;
+  display: block;
+  width: 300px;
+  margin: 25px auto 0;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2em;
 }
 
 .carousel-img {
@@ -88,6 +88,19 @@ label {
 
 .carousel-caption {
   bottom: 300px;
+}
+
+.flash-item {
+  background-color: lightslategray;
+  border-radius: 30px 30px 0 0;
+  border: solid floralwhite;
+  border-width: 1px;
+  padding: 5px 5px 30px 5px;
+  margin-bottom: -30px;
+}
+
+.flash-item-snippet {
+  display: none;
 }
 
 img .carousel-img{
