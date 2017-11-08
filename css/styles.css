@@ -63,9 +63,6 @@ label {
   cursor: pointer;
   color: rgba(145, 11, 11, 1);
 }
-#actual-list:hover {
-  text-decoration: underline;
-}
 
 #name-score-row {
   display: none;
