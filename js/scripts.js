@@ -23,6 +23,13 @@ return isGuessCorrect;
 
 // FRONTEND
 $(function(){
+  var flashCounter = 1;
+  var flashLibrary = {};
+  var remainingCards = [];
+  var randomCardIndex;
+  var currentId;
+  var randomId;
+  var user;
   function modalText(){
     $('span#show-name').text(flashLibrary[randomId].name);
     $('span#show-snippet').text(flashLibrary[randomId].snippet);
@@ -31,13 +38,6 @@ $(function(){
     randomCardIndex = (Math.floor(Math.random() * remainingCards.length));
     randomId = remainingCards[randomCardIndex];
   }
-  var flashCounter = 1;
-  var flashLibrary = {};
-  var remainingCards = [];
-  var randomCardIndex;
-  var currentId;
-  var randomId;
-  var user;
   $('form#create-user').submit(function(event) {
     if ($('input#username').val().length) {
     event.preventDefault();
@@ -55,7 +55,7 @@ $(function(){
     event.preventDefault();
     var flashName = $('input#flash-name').val();
     var flashSnippet = $('textarea#flash-snippet').val();
-    var flashAnswer = $('textarea#flash-answer').val();
+    var flashAnswer = $('input#flash-answer').val();
     flashLibrary['flash' + flashCounter] = new Flashcard(flashName, flashSnippet, flashAnswer);
     $('div#actual-list').children('ul').append('<li id="flash' + flashCounter + '" class="flash-item">' + '<i class="fa-li fa fa-book"></i>' + flashName + '</li>');
     flashCounter++;
@@ -71,8 +71,7 @@ $(function(){
     $("#dad-hates-you").hide();
     $(".flashcard-test").show();
     remainingCards = Object.keys(flashLibrary);
-    randomCardIndex = (Math.floor(Math.random() * Object.keys(flashLibrary).length));
-    randomId = remainingCards[randomCardIndex];
+    getNextRandomCardIndex();
     console.log(randomId);
     modalText();
   });
@@ -85,7 +84,9 @@ $(function(){
   });
   $('button#check').click(function(){
     var userAnswer = $("input#user-answer").val();
-    console.log(currentId);
+    console.log(randomId);
+    console.log(flashLibrary[randomId]);
+    console.log('answer: ');console.log(userAnswer);
     if (userAnswer === flashLibrary[randomId].answer) {
       $("#display-user-score").text(user.scoreUp());
       if (remainingCards.length === 1) {
@@ -97,7 +98,12 @@ $(function(){
       modalText();
       }
     } else {
-    $("#dad-hates-you").show();
+      $(".flashcard-test").hide()
+      $("#dad-hates-you").show();
     }
+  });
+  $('button#try-again').click(function(){
+    $("#dad-hates-you").hide();
+    $(".flashcard-test").show()
   });
 });
