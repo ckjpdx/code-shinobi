@@ -108,7 +108,7 @@ $(function(){
     event.preventDefault();
     var userAnswer = $("input#user-answer").val();
     if (userAnswer === flashLibrary[randomId].answer) {
-      $('div#' + randomId).append('<i class="fa fa-star-o" aria-hidden="true"></i>');
+      $('div#' + randomId).append('<img src="css/star.png" class="ninja-star-small" alt="ninja star">');
       if (remainingCards.length === 1) {
         $("#correct-result").show();
         $(".flashcard-test").hide();
