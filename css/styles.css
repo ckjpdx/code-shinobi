@@ -15,7 +15,7 @@
 }
 a#ready-to-play {
   color: rgba(255, 248, 240, .7);
-  font-size: 1.5em;
+  font-size: 1.7em;
 }
 
 h3.carousel-subheader {
@@ -96,12 +96,13 @@ ul {
 }
 label {
   display: block;
-  width: 300px;
+  width: auto;
   margin: 25px auto 0;
   text-align: center;
   text-decoration: underline;
   font-size: 2em;
 }
+
 span.answer-text {
   color: black;
   background-color: black;
@@ -111,6 +112,7 @@ span.answer-text {
 span.answer-text:hover {
     color: white;
 }
+
 .carousel-img {
   opacity: 0.6;
 }
