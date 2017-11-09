@@ -2,7 +2,7 @@
 
 ### A code flashcard game for programmers, to help remember important code, and then more importantly become a Code Shinobi :octocat:.
 
-#### By _Nathan Barrett, Jack Knight Johnson, Ginger Lee Kretschmer, Cat Janowitz_
+#### By _Nathan Barrett, Chris Knight Johnson, Ginger Lee Kretschmer, Cat Janowitz_
 
 ## Description
 
@@ -51,4 +51,4 @@ Flashcards for Programmers. User is able to create flashcards with code snippets
 
 *This software is licensed under the MIT license*
 
-Copyright (c) 2017 **Nathan Barrett, Jack Knight Johnson, Ginger Lee Kretschmer, Cat Janowitz**
+Copyright (c) 2017 **Nathan Barrett, Chris Knight Johnson, Ginger Lee Kretschmer, Cat Janowitz**
