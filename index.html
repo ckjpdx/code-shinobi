@@ -12,7 +12,6 @@
     <script src="js/scripts.js" type="text/javascript"></script>
   </head>
   <body>
-    <div class="container-fluid">
       <div id="carousel-controls" class="carousel slide" data-interval="false" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -48,6 +47,7 @@
         </a>
       </div><!--carousel-->
 
+    <div class="container-fluid hide">
       <div class="row hide" id="user-div">
         <div class="col-8 offset-2">
           <form id="create-user">
@@ -83,9 +83,9 @@
           <input placeholder="Enter Your Answer Here" type="text" id="flash-answer">
         </div>
         <div id="study-button" class="text-center hide">
-          <button type="button" id="practice-flash" class="w-25 btn">Practice!</button>
+          <button type="button" id="practice-flash" class="btn">Practice!</button>
           <button class="btn" id="add-card" type="submit" name="button">Add Card to Your Library</button>
-          <button type="button" id="delete-flash" class="w-25 btn">Delete!</button>
+          <button type="button" id="delete-flash" class="btn">Delete!</button>
         </div>
       </form><!--flash-form-->
 
