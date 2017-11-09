@@ -31,14 +31,14 @@ Flashcards for Programmers. User is able to create flashcards with code snippets
 
 1. Clone the source files here: https://github.com/noodlebrains/code-shinobi
 2. Open index.html in your chosen browser.
-3. Or open link for site by clicking [here.](https://noodlebrains.github.io/code-shinobi) 
+3. Or open link for site by clicking [here.](https://noodlebrains.github.io/code-shinobi)
 
 ## Support and Contact Details
 * For any questions please reach out to any of our team members below. Here are email and GitHub account details for each:
-** [Chris Knight Johnson](https://github.com/noodlebrains) - cknightjohnson@gmail.com
-** [Cat Janowitz](https://github.com/thatcat13) - thatcat13@gmail.com
-** [Nathan Barrett](https://github.com/nathan-barrett) - demeules.barrett@gmail.com
-** [Ginger Lee Kretschmer](https://github.com/gingerlee) - kretschmons@gmail.com
+  * [Chris Knight Johnson](https://github.com/noodlebrains) - cknightjohnson@gmail.com
+  * [Cat Janowitz](https://github.com/thatcat13) - thatcat13@gmail.com
+  * [Nathan Barrett](https://github.com/nathan-barrett) - demeules.barrett@gmail.com
+  * [Ginger Lee Kretschmer](https://github.com/gingerlee) - kretschmons@gmail.com
 
 ## Technologies Used
 * JavaScript
