@@ -103,9 +103,15 @@ label {
   font-size: 2em;
 }
 
-/*label#name-help {
-}*/
-
+span.answer-text {
+  color: black;
+  background-color: black;
+  display: inline-block;
+  border-radius: 15px;
+}
+span.answer-text:hover {
+    color: white;
+}
 
 .carousel-img {
   opacity: 0.6;
