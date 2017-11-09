@@ -117,6 +117,7 @@ $(function(){
       modalText();
       }
     } else {
+      $('#flashcard-modal').effect( "shake" );
       $(".flashcard-test").hide();
       $("#dad-hates-you").show();
     }
