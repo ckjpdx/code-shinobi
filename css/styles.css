@@ -1,6 +1,10 @@
 .hide {
   display: none;
 }
+
+h3.carousel-subheader {
+  font-size: 2em;
+}
 textarea::-webkit-input-placeholder {
   color: white !important;
 
