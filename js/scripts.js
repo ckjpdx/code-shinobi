@@ -1,12 +1,7 @@
 // Business Logic
 function User(name) {
   this.name = name;
-  this.points = 0;
 }
-User.prototype.scoreUp = function () {
-  this.points++;
-  return this.points;
-};
 
 function Flashcard(name, snippet, answer) {
   this.name = name;
@@ -63,7 +58,7 @@ $(function(){
     user = new User(userName);
     $('form#create-flashcard').slideDown();
     $('#user-div').slideUp();
-    $('#name-score-row').slideDown();
+    $('#name-row').slideDown();
     $('#display-user-name').text(userName + '-wan Shinobi-san');
     $('#study-button').slideDown();
     } else {
@@ -107,7 +102,6 @@ $(function(){
     event.preventDefault();
     var userAnswer = $("input#user-answer").val();
     if (userAnswer === flashLibrary[randomId].answer) {
-      $("#display-user-score").text(user.scoreUp());
       $('div#' + randomId).append('<i class="fa fa-star-o" aria-hidden="true"></i>');
       if (remainingCards.length === 1) {
         $("#correct-result").show();
