@@ -1,26 +1,27 @@
 # Obi Code Shinobi Group Project
 
-#### This program makes flashcards with the user's code snippets and items blocked out, and creates a quiz for them to practice these blocked out items they want to remember.
+#### Code Flashcard game, to help programmers remember code.
 
 #### By **Nathan Barrett, Jack Knight-Johnson, Ginger Lee Kretschmer, Cat Janowitz**
 
 ## Description
 
-This is a website for a user to create custom code flashcards for learning/practicing code.
+Flashcards for Programmers. User is able to create flashcards with code snippets they wish to remember. After creating a deck of flashcards, the user is able to practice learning the code on their flashcards. User gains stars for each correct answer, and is able to practice on all cards until they are all answered correctly. 
 
- - The user enters their name
- - The is able to make their custom flashcard, with a code snippet with a section they would like to remember x'd out, they also provide a name and answer for the flashcard.
- - The user can access their library of custom flashcards, and delete any cards they want.
- - The user is able to practice their flashcards, which will pop up a guessing game, where the user will provide missing snippet in flashcard; if correct, they accumulate points/stars.
-
-### Specs
+## Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 | **User can input custom flashcard name, snippet and answer in a flashcard form field** | NAME: html SNIPPET: img ---="img/example.jpg ANSWER: src | User clicks on "Add to library" button|
-| **User adds custom flashcard to library by clicking "Add to library" button** |User clicks on "Add to library" button| Flashcard Name will appear on unordered list on right column |
+| **User adds custom flashcard to library by clicking "Add to library" button** |User clicks on "Add to library" button| Flashcard Name will appear in a list on right column |
 |**User clicks on list item**| User clicks on list item to practice with that flashcard| In a form field SNIPPET is displayed, user provides answer in ANSWER field, user clicks "Check Code!" button|
 | **After user clicks Check code button, new field displays whether user got answer correct or incorrect**| If correct, "YAY! YOU DID IT!" displayed| If incorrect, an image of a disappointed father appears with "NOPE. Try again." displayed |
 | **For each flashcard the user answers correctly they will receive points** | User answers flash card correctly | Congrats, you are smart. Here is a ninja star - which displays on flash card |
+
+## Instructions
+- The user enters their name
+- The is able to make their custom flashcard, with a code snippet with a section they would like to remember x'd out, they also provide a name of the card and answer.
+- The user can access their library of custom flashcards, and delete any cards they want.
+- The user is able to practice their flashcards, which will pop up a guessing game, where the user will provide missing snippet in flashcard; if correct, they accumulate points/stars.
 
 ## Setup/Installation Requirements
 
