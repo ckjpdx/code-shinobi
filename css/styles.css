@@ -1,9 +1,26 @@
 .hide {
   display: none;
 }
+#ready-link {
+    position: absolute;
+    right: 15%;
+    bottom: 90px;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+a#ready-to-play {
+  color: rgba(255, 248, 240, .7);
+  font-size: 1.5em;
+}
 
 h3.carousel-subheader {
   font-size: 2em;
+  margin-bottom: 30px;
 }
 textarea::-webkit-input-placeholder {
   color: white !important;
@@ -32,7 +49,7 @@ input:-ms-input-placeholder {
 }
 
 input#username {
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 input#flash-name {
@@ -91,7 +108,7 @@ label {
 }
 
 .carousel-caption {
-  bottom: 400px;
+  bottom: 300px;
 }
 
 .flash-item {
