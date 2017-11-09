@@ -316,6 +316,10 @@ button#correct-result {
   width: 50px;
 }
 
+.ninja-star-small {
+  width: 30px;
+}
+
 /*ninjacat palette*/
 /* RGB */
 $color1: rgba(25, 29, 50, 1); /*dark gunmetal*/
