@@ -21,6 +21,11 @@ var isGuessCorrect = false;
 return isGuessCorrect;
 };
 
+function clearFroms(){
+  $('input').val("");
+  $('textarea').val("");
+}
+
 // FRONTEND
 $(function(){
   var flashCounter = 1;
@@ -66,6 +71,7 @@ $(function(){
     flashLibrary['flash' + flashCounter] = new Flashcard(flashName, flashSnippet, flashAnswer);
     $('div#actual-list').append('<div id="flash' + flashCounter + '" class="flash-item">' + '<h4><i class="fa fa-book"></i> ' + flashName + '</h4><div class="flash-item-snippet"><p>' + flashSnippet + '</p></div></div>');
     flashCounter++;
+    clearFroms();
     $('div.flash-item').last().click(function(){ // click to load current id
       currentId = $(this).attr('id');
       $('div.flash-item').css('color', 'inherit');
@@ -106,6 +112,7 @@ $(function(){
       $(".flashcard-test").hide();
       $("#dad-hates-you").show();
     }
+    clearFroms();
   });
   $('button#try-again').click(function(){
     $("#dad-hates-you").hide();
