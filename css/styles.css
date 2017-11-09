@@ -4,15 +4,27 @@
 #ready-link {
     position: absolute;
     right: 15%;
-    bottom: 90px;
+    bottom: 120px;
     left: 15%;
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 40px;
     color: #fff;
     text-align: center;
-    margin-bottom: 30px;
 }
+
+#steps {
+  color: white;
+}
+.carousel-inner, .carousel-item.active, div#carousel-controls {
+    height: 100%;
+}
+
+
+.carousel-inner img {
+    object-fit: cover;
+}
+
 a#ready-to-play {
   color: rgba(255, 248, 240, .7);
   font-size: 1.7em;
@@ -119,6 +131,7 @@ span.answer-text:hover {
 
 .carousel-caption {
   bottom: 300px;
+  top: auto;
 }
 
 .flash-item {
@@ -240,8 +253,17 @@ body {
 #dad-hates-you {
   text-align: center;
 }
+
+button#dad-hates-you {
+  align-items: center;
+}
+
 #correct-result {
   text-align: center;
+}
+
+button#correct-result {
+  align-items: center;
 }
 .modal-footer {
   background-color: rgba(255, 248, 240, 1);/*floral white*/

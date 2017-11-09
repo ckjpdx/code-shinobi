@@ -65,15 +65,18 @@ $(function(){
       alert('Enter your name, ninja')
     }
   });
+
+  $('#study-button').click(function(){
+    $('#practice-delete').slideDown();
+  });
+
   $('form#create-flashcard').submit(function(event){
     event.preventDefault();
     var flashName = $('input#flash-name').val();
     var flashSnippet = $('textarea#flash-snippet').val();
     var flashAnswer = $('input#flash-answer').val();
     flashLibrary['flash' + flashCounter] = new Flashcard(flashName, flashSnippet, flashAnswer);
-    $('div#actual-list').append('<div id="flash' + flashCounter + '" class="flash-item">' + '<h4><i class="fa fa-book"></i> ' + flashName + '</h4><div class="flash-item-snippet"><p class="snippet-text"></p><p>Answer: <span class="answer-text"></span></p></div></div>');
-    $('div#flash' + flashCounter).find('p.snippet-text').text(flashSnippet);
-    $('div#flash' + flashCounter).find('span.answer-text').text(flashAnswer);
+    $('div#actual-list').append('<div id="flash' + flashCounter + '" class="flash-item">' + '<h4><i class="fa fa-book"></i> ' + flashName + '</h4><div class="flash-item-snippet"><p>' + flashSnippet + '</p></div></div>');
     flashCounter++;
     clearFroms();
     $('div.flash-item').last().click(function(){ // click to load current id

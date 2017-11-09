@@ -28,7 +28,7 @@
             <a href="#"><img id="code" class="carousel-img" src="css/code.jpg" alt="tough shinobi"></a>
             <div class="carousel-caption">
               <h1 class="display-1">How does it work?</h1>
-              <h3 class="carousel-subheader">Record your coding flaws. Face them over and over.<br>Destroy them.</h3>
+              <h3 id="steps" class="carousel-subheader">Record your coding flaws. Face them over and over.<br>Destroy them.<br><br>Step 1: Create flashcard<br>Step2: Add to library<br>Step 3: Press 'Practice' to test your shinobi skills with your custom-made flashcards!</h3>
             </div>
           </div>
           <div class="carousel-item">
@@ -83,8 +83,10 @@
           <input placeholder="Example answer: src" type="text" id="flash-answer">
         </div>
         <div id="study-button" class="text-center hide">
-          <button type="button" id="practice-flash" class="btn">Practice!</button>
           <button class="btn" id="add-card" type="submit" name="button">Add Card to Your Library</button>
+        </div>
+        <div class="text-center hide" id="practice-delete">
+          <button type="button" id="practice-flash" class="btn">Practice!</button>
           <button type="button" id="delete-flash" class="btn">Delete!</button>
         </div>
       </form><!--flash-form-->
@@ -114,20 +116,20 @@
                 <h4><span id="show-snippet"></span></h4>
                 <label for="answer"><h5><strong>Your Answer:</stong></h5></label>
                 <input type="text" class="form-control" id="user-answer" placeholder="Enter answer here">
-                <button id="check" type="button" class="our-button btn">Check Your Code, ShinOBE!</button>
+                <button id="check" type="button" class="mx-auto our-button btn">Check Your Code, ShinOBE!</button>
               </div>
             </div> <!--flash card test-->
 
             <div id="correct-result" class="modal-body hide">
               <p id="shinobi">Great job, Shinobi.</p>
-              <img class="img-fluid" src="css/success.gif" alt="teenage mutant ninja turtle thumbs up">
+              <img class="img-fluid" src="css/success.gif" alt="dancing pixelated adorable ninja">
             </div><!--correct result div-->
 
             <div id="dad-hates-you" class="modal-body hide"> <!-- dad hates you, remember that -->
               <p>You have failed this test!</p>
               <p>Keep training Shinobi!</p>
-              <img id="jean-luc" src="https://dab.ninja/wp-content/uploads/ninja_distraction.gif" alt="jean luc is upset">
-              <button id="try-again" type="button">Do or do not, or just try again</button>
+              <img id="jean-luc" src="https://dab.ninja/wp-content/uploads/ninja_distraction.gif" alt="you disapoint all shinobi">
+              <button id="try-again" type="button" class="mx-auto our-button btn">Do or do not, or just try again</button>
             </div><!--dad hates you div-->
           </div>
         </div>
