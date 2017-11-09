@@ -41,6 +41,7 @@ $(function(){
 
   $('button#lets-do-this').click(function() {
     $("#carousel-controls").slideUp();
+    $(".container-fluid").show();
     $("#user-div").slideDown();
   });
 
