@@ -39,6 +39,12 @@ $(function(){
     randomId = remainingCards[randomCardIndex];
   }
 
+  $('a#ready-to-play').click(function() {
+    $("#carousel-controls").slideUp();
+    $(".container-fluid").show();
+    $("#user-div").slideDown();
+  });
+
   $('button#lets-do-this').click(function() {
     $("#carousel-controls").slideUp();
     $(".container-fluid").show();
