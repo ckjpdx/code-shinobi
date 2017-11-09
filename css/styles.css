@@ -309,9 +309,12 @@ button#correct-result {
   background: none;
   border: none;
 }
-.carousel-inner > .item > img {
-    margin: 0 auto;
+
+
+.ninja-star {
+  width: 50px;
 }
+
 /*ninjacat palette*/
 /* RGB */
 $color1: rgba(25, 29, 50, 1); /*dark gunmetal*/
