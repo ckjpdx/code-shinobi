@@ -69,7 +69,7 @@ $(function(){
   $('#study-button').click(function(){
     $('#practice-delete').slideDown();
     $('.delete-button').show();
-  }); 
+  });
 
   $('form#create-flashcard').submit(function(event){
     event.preventDefault();
