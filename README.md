@@ -1,8 +1,8 @@
 # Obi Code Shinobi Group Project
 
-#### Code Flashcard game, to help programmers remember code.
+### A code flashcard game for programmers, to help remember important code, and then more importantly become a Code Shinobi :octocat:.
 
-#### By **Nathan Barrett, Jack Knight Johnson, Ginger Lee Kretschmer, Cat Janowitz**
+#### By _Nathan Barrett, Jack Knight Johnson, Ginger Lee Kretschmer, Cat Janowitz_
 
 ## Description
 
@@ -17,7 +17,7 @@ Flashcards for Programmers. User is able to create flashcards with code snippets
 | **User adds custom flashcard to library by clicking "Add to library" button** |User clicks on "Add to library" button| Flashcard Name will appear in a list on right column |
 |**User clicks on list item**| User clicks on list item to practice with that flashcard| In a form field SNIPPET is displayed, user provides answer in ANSWER field, user clicks "Check Code!" button|
 | **After user clicks Check code button, new field displays whether user got answer correct or incorrect**| If correct, "YAY! YOU DID IT!" displayed| If incorrect, an image of a disappointed father appears with "NOPE. Try again." displayed |
-| **For each flashcard the user answers correctly they will receive points** | User answers flash card correctly | Congrats, you are smart. Here is a ninja star - which displays on flash card |
+| **For each flashcard the user answers correctly they will receive a star** | User answers flashcard correctly | Congrats, you are smart. Here is a ninja star - which displays on flash card :star:|
 
 ## Instructions
 * User enters their name to create a profile
@@ -51,4 +51,4 @@ Flashcards for Programmers. User is able to create flashcards with code snippets
 
 *This software is licensed under the MIT license*
 
-Copyright (c) 2017 **Nathan Barrett, Jack Knight-Johnson, Ginger Lee Kretschmer, Cat Janowitz**
+Copyright (c) 2017 **Nathan Barrett, Jack Knight Johnson, Ginger Lee Kretschmer, Cat Janowitz**
